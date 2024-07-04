@@ -1,4 +1,5 @@
-#EmotionDetection
+Emotion Detection
+
 Trained a Convolutional Neural Network to recognize different emotions.
 
 Datasets to download:
