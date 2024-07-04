@@ -32,7 +32,7 @@ class CKEmotionDataset(Dataset):
 
 
     def __len__(self):
-        return self.length #786
+        return self.length #455
 
     def sub_folder(self, index):
         if (index < self.angerl):
@@ -88,7 +88,6 @@ class EmotionDataset(Dataset):
             image = self.transform(image)
 
         return image, y_label
-
 
 # e = CKEmotionDataset("CK", transform=transforms.ToTensor(), train = False)
 # print(e.__len__())

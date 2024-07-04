@@ -59,8 +59,8 @@ batch_size = 64
 num_epochs = 11
 
 # Load Data
-train_set = CKEmotionDataset(root_dir = "CK", transform = transforms.ToTensor(), train=True)
-#test_set = EmotionDataset(root_dir = "Testing", transform = transforms.ToTensor(), train=False)
+train_set = EmotionDataset(root_dir = "Training", transform = transforms.ToTensor(), train=True)
+test_set = EmotionDataset(root_dir = "Testing", transform = transforms.ToTensor(), train=False)
 train_loader = DataLoader(dataset=train_set, batch_size=batch_size, shuffle=True, num_workers=0)
 #test_loader = DataLoader(dataset=test_set, batch_size=batch_size, shuffle=False, num_workers=0)
 
@@ -126,25 +126,25 @@ def check_accuracy(loader, model):
 if __name__ == "__main__":
 
     #train and save model
-    # train_model()
-    # saved_model = {'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}
-    # save_model(saved_model)
-    # check_accuracy(train_loader, model)
+    train_model()
+    saved_model = {'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}
+    save_model(saved_model)
+    check_accuracy(train_loader, model)
 
     #load and use model
-    load_model(torch.load('saved_model1.pth.tar'))
-    r = torchvision.transforms.Resize((48, 48))
-    t = transforms.ToTensor()
-
-    def image_loader(image_name):
-        image = io.imread(image_name)
-        image = t(image)
-        image = r(image)
-        image = Variable(image, requires_grad=True)
-        image = image.unsqueeze(0)
-        return image.cpu()
-
-    image = image_loader("CK/surprise/S014_001_00000029.png")
-    emotions_dict = {0: "anger", 1: "fear", 2: "happiness", 3: "neutral", 4: "sadness", 5: "surprise"}
-    print(model(image))
-    print(emotions_dict[torch.argmax(model(image)).item()])
+    # load_model(torch.load('saved_model1.pth.tar'))
+    # r = torchvision.transforms.Resize((48, 48))
+    # t = transforms.ToTensor()
+    #
+    # def image_loader(image_name):
+    #     image = io.imread(image_name)
+    #     image = t(image)
+    #     image = r(image)
+    #     image = Variable(image, requires_grad=True)
+    #     image = image.unsqueeze(0)
+    #     return image.cpu()
+    #
+    # image = image_loader("Training/Angry-0.jpg")
+    # emotions_dict = {0: "anger", 1: "fear", 2: "happiness", 3: "neutral", 4: "sadness", 5: "surprise"}
+    # print(model(image))
+    # print(emotions_dict[torch.argmax(model(image)).item()])
