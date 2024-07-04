@@ -5,71 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5bec2d0-acb0-4f7b-878d-0de6bfade6d7" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/emotionRecognitionOld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EmotionRecognition.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S005_001_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S011_005_00000020.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S022_006_00000017.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S032_005_00000016.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S035_005_00000019.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S044_006_00000019.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S045_004_00000015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S046_004_00000017.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S051_003_00000018.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S052_006_00000013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S054_004_00000024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S055_003_00000009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S056_002_00000010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S057_003_00000015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S058_006_00000018.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S060_005_00000021.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S061_004_00000022.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S062_005_00000029.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S065_005_00000008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S067_006_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S068_005_00000021.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S069_003_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S070_005_00000016.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S071_006_00000014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S073_006_00000014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S074_004_00000018.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S075_005_00000012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S076_005_00000012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S077_006_00000014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S078_007_00000013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S079_002_00000012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S080_008_00000009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S081_008_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S082_007_00000010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S085_004_00000017.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S087_004_00000012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S088_004_00000020.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S090_006_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S095_006_00000013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S096_003_00000012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S097_004_00000030.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S098_003_00000013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S099_007_00000012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S102_009_00000015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S105_008_00000010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S106_004_00000008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S107_005_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S108_006_00000020.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S109_005_00000014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S111_007_00000014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S116_006_00000007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S124_006_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S125_008_00000010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S128_004_00000013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S129_011_00000018.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S130_012_00000011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S131_010_00000018.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S132_005_00000016.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CK/disgust/S134_008_00000013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/customDataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emotionRecognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/emotionRecognition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_model.pth.tar" beforeDir="false" afterPath="$PROJECT_DIR$/saved_model.pth.tar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,120 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.customDataset.executor": "Run",
-    "Python.emotionRecognition.executor": "Run",
-    "Python.facialRecognition.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/harsh/OneDrive/Documents/Python/PycharmProjects/emotionRecognition"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.customDataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.emotionRecognition.executor&quot;: &quot;Run&quot;,
+    &quot;Python.facialRecognition.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/harsh/OneDrive/Documents/Python/PycharmProjects/emotionRecognition&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="EmotionRecognition" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="EmotionRecognition" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="EmotionRecognition" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="EmotionRecognition" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="EmotionRecognition" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="EmotionRecognition" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-  </component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

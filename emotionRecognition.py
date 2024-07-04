@@ -8,19 +8,22 @@ import torch.nn.functional as F
 import os
 import pandas as pd
 from PIL import Image
+from torch import IntTensor
+from torch.autograd import Variable
 from torch.utils.data import (
     Dataset,
     DataLoader,
 )  # Gives easier dataset managment and creates mini batches
 from customDataset import EmotionDataset
 from customDataset import CKEmotionDataset
+from skimage import io
 
 # Set device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 #Convolutional Neural Network
 class ConvolutionalNeuralNetwork(nn.Module):
-    def __init__(self, in_channel = 1, num_classes = 10):
+    def __init__(self, in_channel, num_classes):
         super(ConvolutionalNeuralNetwork, self).__init__()
         self.conv1 = nn.Conv2d(in_channels=1, out_channels=8, kernel_size=(3,3), stride=(1,1), padding=(1,1)) #keeps size
         self.pool = nn.MaxPool2d(kernel_size=(2,2), stride =(2,2)) #cuts size in half
@@ -36,9 +39,10 @@ class ConvolutionalNeuralNetwork(nn.Module):
         x = self.pool(x)
         x = x.reshape(x.shape[0], -1)
         x = self.fc1(x)
+        x = torch.softmax(x, dim = 1)
         return x
 
-def save_model(state, filename = "saved_model.pth.tar"):
+def save_model(state, filename = "saved_model1.pth.tar"):
     print("Saving model")
     torch.save(state, filename)
 
@@ -61,7 +65,7 @@ train_loader = DataLoader(dataset=train_set, batch_size=batch_size, shuffle=True
 #test_loader = DataLoader(dataset=test_set, batch_size=batch_size, shuffle=False, num_workers=0)
 
 #init network
-model = ConvolutionalNeuralNetwork().to(device)
+model = ConvolutionalNeuralNetwork(in_channel=in_channel, num_classes=num_classes).to(device)
 
 #loss - cost function
 criterion = nn.CrossEntropyLoss()
@@ -110,7 +114,6 @@ def check_accuracy(loader, model):
             x = x.to(device = device)
             y = y.to(device=device)
             #x = x.reshape(x.shape[0], -1) #for NN
-
             scores = model(x)
             _, predictions = scores.max(1)
             num_correct += (predictions == y).sum()
@@ -121,13 +124,27 @@ def check_accuracy(loader, model):
     model.train()
 
 if __name__ == "__main__":
-    #torch.set_num_threads(10)
-    #training model
-    train_model()
 
-    saved_model = {'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}
-    save_model(saved_model)
+    #train and save model
+    # train_model()
+    # saved_model = {'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}
+    # save_model(saved_model)
+    # check_accuracy(train_loader, model)
 
-    #check accuracy
-    check_accuracy(train_loader, model)
-    #check_accuracy(test_loader, model)
+    #load and use model
+    load_model(torch.load('saved_model1.pth.tar'))
+    r = torchvision.transforms.Resize((48, 48))
+    t = transforms.ToTensor()
+
+    def image_loader(image_name):
+        image = io.imread(image_name)
+        image = t(image)
+        image = r(image)
+        image = Variable(image, requires_grad=True)
+        image = image.unsqueeze(0)
+        return image.cpu()
+
+    image = image_loader("CK/surprise/S014_001_00000029.png")
+    emotions_dict = {0: "anger", 1: "fear", 2: "happiness", 3: "neutral", 4: "sadness", 5: "surprise"}
+    print(model(image))
+    print(emotions_dict[torch.argmax(model(image)).item()])
