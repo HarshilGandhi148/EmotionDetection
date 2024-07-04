@@ -1,4 +1,4 @@
-Emotion Detection
+# Emotion Detection
 
 Trained a Convolutional Neural Network to recognize different emotions.
 
