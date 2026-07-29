@@ -22,7 +22,9 @@ class ConvolutionalNeuralNetwork(nn.Module):
         self.conv2 = nn.Conv2d(in_channels=8, out_channels=16, kernel_size=(3,3), stride=(1,1), padding=(1,1)) #keeps size
         self.conv3 = nn.Conv2d(in_channels=16, out_channels=32, kernel_size=(3,3), stride=(1,1), padding=(1,1)) #keeps size
         self.conv4 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=(3, 3), stride=(1, 1),padding=(1, 1))  # keeps size
-        self.fc1 = nn.Linear(64*12*12, num_classes)
+        self.fc1 = nn.Linear(64 * 12 * 12, 128)
+        self.dropout = nn.Dropout(0.5)
+        self.fc2 = nn.Linear(128, num_classes)
 
     def forward(self, x):
         x = F.relu((self.conv1(x)))
@@ -127,7 +129,7 @@ if __name__ == "__main__":
 
     # check accuracy
     # check_accuracy(train_loader, model)
-    # check_accuracy(test_loader, model)
+    check_accuracy(test_loader, model)
 
     # load and use model
     load_model(torch.load('saved_model.pth.tar'))
