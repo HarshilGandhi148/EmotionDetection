@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emotion-detection"
+version = "0.2.0"
+description = "From-scratch facial expression classification in PyTorch"
+requires-python = ">=3.11"
+dependencies = [
+  "torch>=2.6,<3", "torchvision>=0.21,<1", "numpy>=1.26,<3",
+  "Pillow>=10,<13", "scikit-learn>=1.5,<2", "opencv-python>=4.10,<5",
+  "tensorboard>=2.18,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+emotion = "emotion.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["emotion*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
